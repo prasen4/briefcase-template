@@ -21,7 +21,7 @@ class {{ app_class_name }}(toga.App):
 
 def main():
     return {{ app_class_name }}('{{ cookiecutter.formal_name }}', '{{ cookiecutter.bundle }}.{{ cookiecutter.app_name }}')
-{% elif cookiecutter.gui_framework == 'PySide2' %}
+% elif {cookiecutter.gui_framework == 'PySide2' %}
 
 import cv2
 from gaze_tracking import GazeTracking
